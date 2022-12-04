@@ -1,0 +1,135 @@
+
+body {
+    background: #333333;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #dd1818, #333333);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #dd1818, #333333); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    color: white; 
+    font-family: 'Open Sans Condensed', sans-serif; 
+    font-size: 50px; 
+    font-weight: 700; 
+    line-height: 64px; 
+    margin: 0 0 0; 
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    color: #cfc547;
+    text-shadow: 10px 10px 25px rgb(81,67,21),
+    -10px 10px 25px rgb(81,67,21),
+    -10px -10px 25px rgb(81,67,21),
+    10px -10px 25px rgb(81,67,21);
+}
+
+button {
+    border: none;
+    border-radius: 25%;
+    
+}
+
+button:hover {
+    background-color: rgb(141, 173, 163);
+
+}
+
+.container {
+    margin: 0 auto;
+    width: 400px;
+    padding: 10px 15px 15px;
+    background-color:  rgb(202, 202, 198);
+    border-radius: 20px;
+    
+}
+
+.display {
+    display: grid;
+    border-radius: 15px;
+    justify-items: end;
+    margin-bottom: 10px;
+    padding: 10px;
+    width: 380px;
+    height: 80px;
+    color: black;
+    background-color: rgb(248, 247, 247);
+}
+
+.top-display {
+    align-self: flex-start;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.bottom-display {
+    align-self: flex-end;
+    overflow: hidden;
+}
+
+.buttons {
+    display: grid;
+    gap: 2px;
+    height: 400px;
+    grid-template: 
+        'clear erase percentage divide'
+        'seven eight nine multiply'
+        'four five six minus'
+        'one two three plus'
+        'zero dot equal expo';
+}
+
+
+.button-operator, #clear, #erase {
+    font-style: italic;
+    font-weight: bold;
+    background-color: rgb(185, 185, 174);
+}
+
+#nr-9 {
+    grid-area: nine;
+}
+
+#nr-8 {
+    grid-area: eight;
+}
+
+#nr-7 {
+    grid-area: seven;
+}
+
+#nr-6 {
+    grid-area: six;
+}
+
+#nr-5 {
+    grid-area: five;
+}
+
+#nr-4 {
+    grid-area: four;
+}
+#nr-3 {
+    grid-area: three;
+}
+#nr-2 {
+    grid-area: two;
+}
+#nr-1 {
+    grid-area: one;
+}
+#nr-0 {
+    grid-area: zero;
+}
+#dot {
+    grid-area: dot;
+}
+#clear {
+    grid-area: clear;
+}
+#erase {
+    grid-area: erase;
+}
+#equal {
+    grid-area: expo;
+}
